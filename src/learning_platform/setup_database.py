@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from learning_platform.db.postgres import PostgresDatabase
 
 

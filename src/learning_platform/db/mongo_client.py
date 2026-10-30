@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+
 from learning_platform.config import mongo_settings
 
 

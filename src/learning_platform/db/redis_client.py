@@ -1,4 +1,5 @@
 import redis
+
 from learning_platform.config import redis_url
 
 

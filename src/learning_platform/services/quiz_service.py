@@ -6,5 +6,5 @@ class QuizService:
         if not title.strip():
             raise ValueError("Quiz title cannot be empty.")
         if not isinstance(questions, list):
-            raise ValueError("Questions must be provided as a list.")
+            raise TypeError("Questions must be provided as a list.")
         return self.quiz_repository.create_quiz(course_id, title, questions)

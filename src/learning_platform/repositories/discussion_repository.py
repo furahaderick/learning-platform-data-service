@@ -1,4 +1,5 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+
 from bson.objectid import ObjectId
 
 
@@ -11,7 +12,7 @@ class DiscussionRepository:
             "course_id": course_id,
             "student_id": student_id,
             "message": message,
-            "created_at": datetime.now(timezone.utc),
+            "created_at": datetime.now(UTC),
             "replies": [],
         }
         result = self.collection.insert_one(document)
@@ -25,7 +26,7 @@ class DiscussionRepository:
                     "replies": {
                         "student_id": student_id,
                         "message": message,
-                        "created_at": datetime.now(timezone.utc),
+                        "created_at": datetime.now(UTC),
                     }
                 }
             },
