@@ -1,4 +1,5 @@
 from psycopg2.extras import Json
+
 from learning_platform.db.postgres import PostgresDatabase
 
 

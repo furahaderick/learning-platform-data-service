@@ -1,5 +1,7 @@
 from contextlib import contextmanager
+
 from psycopg2.pool import ThreadedConnectionPool
+
 from learning_platform.config import postgres_settings
 
 
