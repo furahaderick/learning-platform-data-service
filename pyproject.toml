@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "online-learning-platform"
+version = "0.1.0"
+description = "Database project: PostgreSQL, Redis, and MongoDB"
+authors = ["Furaha Yves Derick <yvesderricks@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "learning_platform", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.8"
+pymongo = "^4.8.0"
+python-dotenv = "^1.0.1"
+pre-commit = "^4.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
